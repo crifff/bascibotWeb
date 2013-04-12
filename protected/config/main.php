@@ -7,7 +7,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-    'name'=>'My Web Application',
+    'name'=>'BascibotWeb',
     'theme'=>'bootstrap',
     // preloading 'log' component
     'preload'=>array('log'),
@@ -41,7 +41,6 @@ return array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
         // uncomment the following to enable URLs in path-format
-        /*
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
@@ -50,13 +49,12 @@ return array(
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
         ),
-        */
         // uncomment the following to use a MySQL database
         'db'=>array(
             'connectionString'=>'mysql:host=localhost;dbname=bascibot',
             'emulatePrepare'=>true,
-            'username'=>'root',
-            'password'=>'root',
+            'username'=>'bascibot',
+            'password'=>'agepoyo1234',
             'charset'=>'utf8',
         ),
         'errorHandler'=>array(
