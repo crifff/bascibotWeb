@@ -85,9 +85,13 @@ class Anime extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('publisher',$this->publisher,true);
 		$criteria->compare('date',$this->date,true);
+        $criteria->order='id DESC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+            'pagination' => array(
+                'pageSize' => 20,
+            ),
 		));
 	}
 }

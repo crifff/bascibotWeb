@@ -127,6 +127,7 @@ class AnimeController extends Controller
 	 */
 	public function actionIndex()
 	{
+        return $this->actionAdmin();
 		$dataProvider=new CActiveDataProvider('Anime');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
